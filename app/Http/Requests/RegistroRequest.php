@@ -32,4 +32,12 @@ class RegistroRequest extends FormRequest
             ],
         ];
     }
+    public function messages()
+    {
+        return [
+            'password' => 'La Contraseña debe contener al menos 8 caracteres, un simbolo y un número',
+            'email.email' => 'El email no es válido',
+            'email.unique' => 'El usuario ya esta registrado',
+        ];
+    }
 }
