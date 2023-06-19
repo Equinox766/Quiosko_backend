@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+Route::middleware('auth:sanctum')->get('/user', function (Request $request){
+   return $request->user();
+});
+
 
 Route::apiResource('/categorias', CategoriaController::class);
 Route::apiResource('/productos', ProductoController::class);
@@ -23,3 +27,4 @@ Route::apiResource('/productos', ProductoController::class);
 //Authentication
 
 Route::post('/registro', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
