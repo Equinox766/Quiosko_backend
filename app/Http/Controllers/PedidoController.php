@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\PedidoResource;
 use App\Models\Pedido;
 use App\Models\PedidoProducto;
 use Carbon\Carbon;
@@ -16,7 +17,7 @@ class PedidoController extends Controller
      */
     public function index()
     {
-        //
+        return PedidoResource::collection(Pedido::with('user', 'productos')->where('estado', 0)->get());
     }
 
     /**
