@@ -6,8 +6,8 @@
 
     <title>EquinoxAPI</title>
 
-    {{--<!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">--}}
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <style>
@@ -393,19 +393,21 @@
         }
     </style>
 
-    {{--<style>
+    <style>
         body {
             font-family: 'Nunito', sans-serif;
         }
-    </style>--}}
+    </style>
 </head>
 <body class="antialiased">
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-
-
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-            <h1 class="text-gray-300">  Equinox API</h1>
+            <div class="ml-12">
+                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                    Este recurso solo puede ser accedido vía API
+                </div>
+            </div>
         </div>
     </div>
 </div>
